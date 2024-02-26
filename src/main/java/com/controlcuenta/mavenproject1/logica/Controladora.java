@@ -5,11 +5,9 @@
 package com.controlcuenta.mavenproject1.logica;
 
 import com.controlcuenta.mavenproject1.persistencia.ControladoraPersistencia;
+import java.util.ArrayList;
 
-/**
- *
- * @author Rombo del Tejar
- */
+
 public class Controladora {
     
     ControladoraPersistencia controlPersis = new ControladoraPersistencia();
@@ -27,8 +25,33 @@ public class Controladora {
     }
     
     public Alumno buscarAlumno(int id){
-        
-        
         return controlPersis.buscarAlumno(id);
     }
+    
+    public ArrayList<Alumno> devolverListaAlumnos(){
+        return controlPersis.devolerListaAlumnos();
+    }
+    
+    //CARRERA
+    
+    public void crearCarrera(Carrera carr){
+        controlPersis.crearCarrera(carr);
+    }
+    
+    public void eliminarCarrera(int idCarr){
+        controlPersis.eliminarCarrera(idCarr);
+    }
+    
+    public void editarCarrera(Carrera carr){
+        controlPersis.editarCarrera(carr);
+    }
+    
+    public Carrera buscarCarrera(int id){
+        return controlPersis.buscarCarrera(id);
+    }
+    
+    public ArrayList<Carrera> devolverListaCarreras(){
+        return controlPersis.devolverListaCarreras();
+    }
+
 }

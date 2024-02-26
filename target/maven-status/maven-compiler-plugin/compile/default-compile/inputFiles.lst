@@ -1,7 +1,8 @@
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\persistencia\ControladoraPersistencia.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\Mavenproject1.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\persistencia\AlumnoJpaController.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\IllegalOrphanException.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\NonexistentEntityException.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\logica\Alumno.java
-C:\Users\Rombo del Tejar\Desktop\Proyectos\mavenproject1\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\Mavenproject1.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\persistencia\ControladoraPersistencia.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\logica\Alumno.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\IllegalOrphanException.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\logica\Controladora.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\persistencia\AlumnoJpaController.java
+C:\Users\gbrumatti\Desktop\ProyectosGit\pruebajpa\src\main\java\com\controlcuenta\mavenproject1\persistencia\exceptions\NonexistentEntityException.java
