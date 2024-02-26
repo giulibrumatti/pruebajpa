@@ -1,24 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.controlcuenta.mavenproject1.persistencia;
 
 import com.controlcuenta.mavenproject1.logica.Alumno;
 import com.controlcuenta.mavenproject1.logica.Carrera;
+import com.controlcuenta.mavenproject1.logica.Materia;
 import com.controlcuenta.mavenproject1.persistencia.exceptions.NonexistentEntityException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Rombo del Tejar
- */
 public class ControladoraPersistencia {
     AlumnoJpaController aluJpaCon = new AlumnoJpaController();
     CarreraJpaController carrJpaCon = new CarreraJpaController();
+    MateriaJpaController mateJpaCon = new MateriaJpaController();
 
     public void crearAlumno(Alumno alu) {
         aluJpaCon.create(alu);
@@ -84,8 +79,35 @@ public class ControladoraPersistencia {
         
         return listaCarreras;     
     }
-    
 
+    public void crearMateria(Materia mat) {
+        mateJpaCon.create(mat);
+    }    
     
- 
+    public void eliminarMateria(int id) {
+        try {
+            mateJpaCon.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void editarMateria(Materia mat) {
+        try {
+            mateJpaCon.edit(mat);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public Materia buscarMateria(int id) {
+        return mateJpaCon.findMateria(id);
+    }
+
+    public ArrayList<Carrera> devolverListaMaterias() {
+        List<Materia> listaMat = mateJpaCon.findMateriaEntities();
+        ArrayList<Carrera> listaMaterias = new ArrayList (listaMat);
+        
+        return listaMaterias;  
+    }
 }

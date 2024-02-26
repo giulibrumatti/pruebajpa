@@ -53,5 +53,27 @@ public class Controladora {
     public ArrayList<Carrera> devolverListaCarreras(){
         return controlPersis.devolverListaCarreras();
     }
+    
+    //MATERIA
+    
+    public void crearMateria(Materia mat){
+        controlPersis.crearMateria(mat);
+    }
+    
+    public void eliminarMateria(int id){
+        controlPersis.eliminarMateria(id);
+    }
+    
+    public void editarMateria(Materia mat){
+        controlPersis.editarMateria(mat);
+    }
+       
 
+    public Materia buscarMateria(int id){
+        return controlPersis.buscarMateria(id);
+    }
+    
+    public ArrayList<Carrera> devolverListaMaterias(){
+        return controlPersis.devolverListaMaterias();
+    }
 }
